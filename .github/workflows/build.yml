@@ -4,6 +4,8 @@ on:
   workflow_dispatch:
 
 env:
+  # Adjust this to alter which branch to pull and build from. This is useful if wanting to deviate from the 
+  # original marvinpinto/actions source code and implement manual changes that can be developed on a new branch.
   SOURCE_BRANCH: master
 
 jobs:
