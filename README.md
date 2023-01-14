@@ -1,3 +1,7 @@
+# Testing Node Upgrade
+Bumped the Node version to 18. Consider this beta. You can for it and switch it back to 12 by editing action.yml line 31.
+
+
 # GitHub Automatic Release Action
 
 This action simplifies the GitHub release process for community projects by automatically uploading assets, generating changelogs, handling pre-releases, and more. It is a fork of [marvinpinto/actions](https://github.com/marvinpinto/actions).
@@ -22,7 +26,7 @@ jobs:
     runs-on: "ubuntu-latest"
 
       - name: Create production changeLog and release
-        uses: balena-io-experimental/automatic-release-action@stable
+        uses: SpuzzSomchai/automatic-release-action@stable
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           prerelease: false
